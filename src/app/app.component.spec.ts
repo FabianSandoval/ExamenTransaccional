@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'upao-examen-000238736'`, () => {
+  it(`should have as title 'ExamenUpao'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('upao-examen-000238736');
+    expect(app.title).toEqual('ExamenUpao');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('upao-examen-000238736 app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('ExamenUpao app is running!');
   });
 });
